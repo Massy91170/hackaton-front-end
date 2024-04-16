@@ -1,161 +1,149 @@
-*{
-    margin :0;
-    padding: 0;
-   
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 
-main{
-    margin: 0;
-    padding: 0;
-    background-image:url(./img/background.jpg) ;
-    background-position: center;
-    height: 100vh;
-    width: 100;
-    
+/* #ticket
+{
+    display: flex;
+    margin-left: 20px;
+    width: 50px;
+    font-size: 3vh;
+} */
+
+main {
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/background.jpg);
+  background-position: center;
+  height: 100vh;
+  width: 100;
 }
-h1{
-    font-size: 4vh;
-    margin-top:  4vh;
+h1 {
+  font-size: 4vh;
+  margin-top: 4vh;
+}
+
+#lorem{
+  font-size: 3vh;
+  margin-top: 2vh;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 
 p{
-    font-size: 3vh;
-    margin-top: 2vh;
+    padding: 0 25px;
 }
-
-#header{
+#nav{
     display: flex;
-    justify-content: space-around;
-    
-
 }
-#spanheader{
-    width: 80%;
+#spanheader {
+  width: 80%;
 }
 
-#firstdivhome{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
+#firstdivhome {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
 }
 .container {
-    display: flex;
-    margin: 0 ; 
-    width: 100vw;
-    padding-bottom: 50%;
-    
-    justify-content: space-around;
-    
-    
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  padding-bottom: 50%;
+
+  justify-content: space-around;
 }
 
-input{
-    
-    width: 240px; 
-    height: 25px; 
-    font-size: 10px; 
-    margin-left: 6px;
-    font-size: 15px;
-    border-radius: 5px;
-    
-    
-   
-    
+input {
+  width: 240px;
+  height: 25px;
+  font-size: 10px;
+  margin-left: 6px;
+  font-size: 15px;
+  border-radius: 5px;
 }
 
-
-#seconddivhome{
-    display: flex;
-    height: 50vh;
-    width: 18vw;
-    flex-direction: column;
-    border: 1px solid black;
-    margin-top: 9.1vw;
- background-color: aliceblue;
- align-items: center;
- padding-top: 20px;
- border-radius: 10px;
- 
- 
-
-     
+#seconddivhome {
+  display: flex;
+  height: 50vh;
+  width: 18vw;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-top: 9.1vw;
+  background-color: aliceblue;
+  align-items: center;
+  padding-top: 20px;
+  border-radius: 10px;
 }
 
-#depart{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 50vh ;
-    align-items: center;
-    margin-top: 10px;
-    
-    
+#depart {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 50vh;
+  align-items: center;
+  margin-top: 10px;
 }
 
-#date{
-    display:flex;
-    justify-content: space-around;
-    margin-top: 25px;
+#date {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
 }
 
-#button{
-   
-        width: 75%;
-        background-color: #4CAF50; 
-        color: white; 
-        padding: 10px 20px; 
-        border: none; 
-        border-radius: 5px; 
-        cursor: pointer; 
-        font-size: 16px; 
-        transition: background-color 0.3s ease; 
-        margin-bottom: 30px;
-    }
-    
-    button:hover {
-        background-color: #45a049; 
-    }
-    
-    
-   
-#thirddivhome{
-    display:flex;
-    flex-direction: column;
-    border: 1px solid blue;
-    width: 16vw; 
-    height: 50vh;
-    background-color: white;
-    margin-top: 10vw;
-    border-radius: 10px;
-    
-} 
-
-#hr{
-    margin-left: 26px;
-    font-weight: 15px;
-    width: 25vh;
-    color: #45a049;
-    
-    
+#button {
+  width: 75%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
 }
 
-#train{
-    display: flex;
-    height: 200px;
-    width: 150px;
-    margin-top: 20px;
-    margin-left: 40px;
+button:hover {
+  background-color: #45a049;
 }
 
-#para2{
-    font-size: 19px;
+#thirddivhome {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  width: 16vw;
+  height: 50vh;
+  background-color: white;
+  margin-top: 10vw;
+  border-radius: 10px;
 }
 
+#hr {
+  margin-left: 26px;
+  font-weight: 15px;
+  width: 25vh;
+  color: #45a049;
+}
 
+#train {
+  display: flex;
+  height: 200px;
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
 
-
-
+#para2 {
+  font-size: 19px;
+}
