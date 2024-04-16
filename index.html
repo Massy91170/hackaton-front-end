@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>projet hackaton</title>
   </head>
   <body>
-    <header>
-      <img src="" alt="home" />
-      <img src="" alt="cart" />
-      <img src="" alt="booking" />
+    <header id="header">
+      <img id="first-pic" alt="home" /><span id="spanheader"> </span
+      ><img id="second-pic" src="" alt="cart" />
+      <img src="third-pic" alt="booking" />
     </header>
 
     <main>
-      <div id="first div home">
+      <div id="firstdivhome">
         <h1>Explore the world effortlessly by train</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           incidunt doloremque iure facilis magnam consequuntur debitis error
-          sequi aspernatur aliquid, saepe maxime illum dignissimos
         </p>
       </div>
-      <div id="second div home"><input type="text" placeholder="Depart"><label for="text"></label>
-        <input type="text" placeholder="arrivé">
-
-        <button type="button">research</button>
-    </div>
-      <div id="third div home">
-    </div>
+      <div class="container">
+        <div id="seconddivhome">
+          <div id="depart">
+            <input type="text" placeholder="Departure" /><label
+              for="text"
+            ></label>
+            <input type="text" placeholder="Arrival" /><span> </span>
+            <input type="date" name="date" id="date" />
+          </div>
+          <button id="button">research</button>
+        </div>
+        <div id="thirddivhome">
+          <img id="train" src="./img/train.png" alt="train" />
+          <hr id="hr" />
+          <p id="para2">It's time to book your futur trip.</p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
