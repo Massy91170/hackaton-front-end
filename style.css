@@ -120,9 +120,10 @@ button:hover {
 
 #thirddivhome {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  overflow: auto;
   border: 1px solid blue;
-  width: 16vw;
+  width: 30vw; /* base : 16vw*/
   height: 50vh;
   background-color: white;
   margin-top: 10vw;
@@ -147,3 +148,17 @@ button:hover {
 #para2 {
   font-size: 19px;
 }
+
+
+/* ------------------------------------------CLASS AND ID FROM JAVASCRIPT---------------------------- */
+
+.row {
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 25%;
+border: 1px solid red;
+
+}
+
+

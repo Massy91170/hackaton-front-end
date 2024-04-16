@@ -8,10 +8,10 @@
   </head>
   <body>
     <header id="header">
-     <a href="./index.html"><p id="ticket">Tickethack</p></a>
-     <div id="nav">
-     <p>Cart</p>
-     <p>Booking</p>
+      <a href="./index.html"><p id="ticket">Tickethack</p></a>
+      <div id="nav">
+      <p>Cart</p>
+      <p>Booking</p>
     </div>
     </header>
 
@@ -26,10 +26,11 @@
       <div class="container">
         <div id="seconddivhome">
           <div id="depart">
-            <input type="text" placeholder="Departure" /><label
+            <input type="text" placeholder="Departure" id="departure"/><label
               for="text"
             ></label>
-            <input type="text" placeholder="Arrival" /><span> </span>
+            <input type="text" placeholder="Arrival" id="arrival"/>
+            <span> </span>
             <input type="date" name="date" id="date" />
           </div>
           <button id="button">research</button>
@@ -41,5 +42,6 @@
         </div>
       </div>
     </main>
+    <script src="script.js" type="module"></script>
   </body>
 </html>

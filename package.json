@@ -1,0 +1,11 @@
+{
+  "name": "hackaton-front-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Massy91170/hackaton-front-end.git",
+  "author": "guilbert <guilbertmartin75@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
