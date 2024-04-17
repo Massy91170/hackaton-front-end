@@ -15,7 +15,7 @@ document.querySelector("#button").addEventListener("click", function (){
     const pattern = /(\d{2}:\d{2})/;
     // const found = searchedDate.match(pattern);
     // console.log("found: ", found)
-        document.querySelector("#thirddivhome").innerHTML = `<div></div>`
+        document.querySelector("#thirddivhome").innerHTML = `<div></div>` 
         for (let i = 0; i < data.length; i++){
             document.querySelector("#thirddivhome").innerHTML += `<div class ="row" data-testid = ${data[i]._id}>
                 <div data-departure = ${data[i].departure}>${data[i].departure}</div>
@@ -43,6 +43,8 @@ document.querySelector("#button").addEventListener("click", function (){
         }
     })
 });
+
+// 
 
 
 
