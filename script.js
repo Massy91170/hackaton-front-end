@@ -17,7 +17,8 @@ document.querySelector("#button").addEventListener("click", function (){
     // console.log("found: ", found)
         document.querySelector("#thirddivhome").innerHTML = `<div></div>` 
         for (let i = 0; i < data.length; i++){
-            document.querySelector("#thirddivhome").innerHTML += `<div class ="row" data-testid = ${data[i]._id}>
+            console.log(data[i]._id.toString())
+            document.querySelector("#thirddivhome").innerHTML += `<div class ="row" data-testid = ${data[i]._id.toString()}>
                 <div data-departure = ${data[i].departure}>${data[i].departure}</div>
                 <div>></div>
                 <div data-arrival = ${data[i].arrival}>${data[i].arrival}</div>
@@ -31,14 +32,17 @@ document.querySelector("#button").addEventListener("click", function (){
         const addToCartArray = document.querySelectorAll(".addToCart");
         for (let cart = 0; cart < addToCartArray.length; cart ++){
             addToCartArray[cart].addEventListener("click", function (){ //addEventListener to add dans cart mongo-DB
-                fetch("http/localhost:3000/", { 
+                fetch("http/localhost:3000/cart", { 
                     method: "POST",
-                    headers: { "Content-Type": "applicatiion/json" },
-                    body: JSON.tostringify({
-                        _id: this.data-test,
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        id: this.getAttribute("data-testid")
                     })
                 })
-                window.location.href = "./cart.html";
+                .then(() => {
+                    console.log(this.getAttribute("data-testid"));
+                    window.location.href = "./cart.html"});
+                //window.location.href = "./cart.html"
             })
         }
     })
