@@ -121,6 +121,8 @@ button:hover {
 #thirddivhome {
   display: flex;
   flex-direction: column; 
+  justify-content: space-around;
+  align-items: center;
   overflow: auto;
   border: 1px solid blue;
   width: 30vw; /* base : 16vw*/
@@ -131,7 +133,6 @@ button:hover {
 }
 
 #hr {
-  margin-left: 26px;
   font-weight: 15px;
   width: 25vh;
   color: rgb(73, 168, 145);
@@ -141,8 +142,6 @@ button:hover {
   display: flex;
   height: 200px;
   width: 150px;
-  margin-top: 20px;
-  margin-left: 40px;
 }
 
 #para2 {
@@ -232,9 +231,10 @@ border: 1px solid red;
 
 /* ------------------------------------------CLASS AND ID FROM JAVASCRIPT FOR CART AND BOOKING---------------------------- */
 
-#databaseContaner{
+#databaseContainer{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .trajet{
