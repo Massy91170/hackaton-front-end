@@ -17,3 +17,23 @@ fetch("http://localhost:3000/cart")
         </div>`
     }
 })
+
+function supprimerElement(event) {
+    // Obtenez l'élément parent (div.row) de celui sur lequel le bouton a été cliqué
+    const rowToRemove = event.target.closest('.row');
+    
+    // Vérifiez si un élément parent a été trouvé
+    if (rowToRemove) {
+        // Supprimez l'élément parent (div.row)
+        rowToRemove.remove();
+    }
+}
+
+// Ajoutez un écouteur d'événements à l'élément contenant les éléments à supprimer
+document.querySelector("#databaseContainer").addEventListener('click', function(event) {
+    // Vérifiez si le clic a été effectué sur le bouton de suppression
+    if (event.target.classList.contains('delete')) {
+        // Appelez la fonction de suppression en passant l'événement
+        supprimerElement(event);
+    }
+});
