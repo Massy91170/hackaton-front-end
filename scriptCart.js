@@ -1,6 +1,5 @@
-fetch("http/localhost:3000/cart")
+fetch("http://localhost:3000/cart")
 .then (response => response.json())
-.populate("trajet")
 .then (data => {
     console.log(data)
     //document.querySelector("#databaseContainer").innerHTML = `<div></div>` 
