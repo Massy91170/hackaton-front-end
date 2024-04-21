@@ -2,29 +2,22 @@
   margin: 0;
   padding: 0;
 }
-body {
-  overflow: hidden;
-}
-
-/* #ticket
-{
-    display: flex;
-    margin-left: 20px;
-    width: 50px;
-    font-size: 3vh;
-} */
 
 main {
   margin: 0;
   padding: 0;
   background-image: url(./img/background.jpg);
   background-position: center;
-  height: 100vh;
-  width: 100;
+  height: 90vh;
+  width: 100vw;
 }
 h1 {
   font-size: 4vh;
   margin-top: 4vh;
+}
+
+a{
+  text-decoration: none;
 }
 
 #lorem{
@@ -34,55 +27,51 @@ h1 {
 
 #header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 70px;
+  height: 10vh;
 }
 
-p{
-    padding: 0 25px;
-}
 #nav{
     display: flex;
+    justify-content: space-between;
+    width: 10%;
 }
-#spanheader {
+
+/* #spanheader {
   width: 80%;
-}
+} */
 
 #firstdivhome {
   display: flex;
   flex-direction: column;
   text-align: center;
   color: white;
+  height: 20%;
 }
 .container {
   display: flex;
-  margin: 0;
-  width: 100vw;
-  padding-bottom: 50%;
-
   justify-content: space-around;
+  align-items: center;
+    height: 80%;
 }
 
 input {
-  width: 240px;
+  width: 90%;
   height: 25px;
   font-size: 10px;
-  margin-left: 6px;
   font-size: 15px;
   border-radius: 5px;
 }
 
 #seconddivhome {
   display: flex;
-  height: 50vh;
-  width: 18vw;
   flex-direction: column;
-  border: 1px solid black;
-  margin-top: 9.1vw;
-  background-color: aliceblue;
   align-items: center;
-  padding-top: 20px;
+  height: 80%;
+  width: 20%;
+  border: 1px solid black;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -90,14 +79,11 @@ input {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 50vh;
-  align-items: center;
+  height: 80%;
   margin-top: 10px;
 }
 
 #date {
-  display: flex;
-  justify-content: space-around;
   margin-top: 25px;
 }
 
@@ -111,11 +97,10 @@ input {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  margin-bottom: 30px;
 }
 
-button:hover {
-  background-color: rgb(73, 168, 145);
+#button:hover {
+  background-color: rgb(73, 143, 168);
 }
 
 #thirddivhome {
@@ -123,12 +108,11 @@ button:hover {
   flex-direction: column; 
   justify-content: space-around;
   align-items: center;
-  overflow: auto;
-  border: 1px solid blue;
-  width: 30vw; /* base : 16vw*/
-  height: 50vh;
+  overflow-y: scroll;
+  border: 1px solid black;
+  width: 30%;
+  height: 80%;
   background-color: white;
-  margin-top: 10vw;
   border-radius: 10px;
 }
 
@@ -144,9 +128,7 @@ button:hover {
   width: 150px;
 }
 
-#para2 {
-  font-size: 19px;
-}
+
 
 
 
@@ -170,7 +152,8 @@ button:hover {
   align-items: center;
   height: 50%;
   width: 80%;
-  border: 1px solid blue;
+  background-color: white;
+  border-radius: 10px;
 }
 
 #myCart{
@@ -189,7 +172,7 @@ button:hover {
   display: flex;
   height: 200px;
   width: 100%;
-  border: 1px solid red;
+  border-radius: 10px;
   background-color: rgb(247, 241, 240);
 }
 
@@ -199,6 +182,8 @@ button:hover {
   align-items: center;
   width: 100%;
   color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: rgb(0, 22, 70);
 }
 .totalEl{
@@ -219,12 +204,29 @@ button:hover {
 /* ------------------------------------------CLASS AND ID FROM JAVASCRIPT---------------------------- */
 
 .row {
+margin-top: 20px;
 display: flex;
 justify-content: space-around;
 align-items: center;
-height: 25%;
-border: 1px solid red;
+min-height: 20%;
+width: 90%;
+background-color: rgb(247, 241, 240);
+border-radius: 10px;
+}
 
+.book{
+height: 20%;
+width: 10%;
+color: white;
+background-color: rgb(73, 168, 145);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.book:hover {
+background-color: rgb(73, 143, 168);
 }
 
 

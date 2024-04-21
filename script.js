@@ -15,21 +15,25 @@ document.querySelector("#button").addEventListener("click", function (){
     const pattern = /(\d{2}:\d{2})/;
     // const found = searchedDate.match(pattern);
     // console.log("found: ", found)
-        document.querySelector("#thirddivhome").innerHTML = `<div></div>` 
+        document.querySelector("#thirddivhome").innerHTML = "";
         for (let i = 0; i < data.length; i++){
             console.log(data[i]._id.toString())
-            document.querySelector("#thirddivhome").innerHTML += `<div class ="row">
+            document.querySelector("#thirddivhome").innerHTML += `
+            <div class="row">
                 <div data-departure = ${data[i].departure}>${data[i].departure}</div>
                 <div>></div>
                 <div data-arrival = ${data[i].arrival}>${data[i].arrival}</div>
                 <div data-date = ${data[i].date}>${data[i].date.match(pattern)[0]}</div>
                 <div data-price = ${data[i].price}>${data[i].price} €</div>
-                <button class="addToCart" data-testid = ${data[i]._id.toString()}>add cart</button>
+                <button class="book" data-testid = ${data[i]._id.toString()}>Book</button>
             </div>`
         }
+        console.log("Height: ", document.querySelector(".row").offsetHeight)
+        document.querySelector(".row").offsetHeight = "300px"
         console.log("_id first cart", document.querySelector(".addToCart").getAttribute("data-testid"))
     })
-    .then(() => {
+    .then(() => { 
+        
         const addToCartArray = document.querySelectorAll(".addToCart");
         for (let cart = 0; cart < addToCartArray.length; cart++){
             addToCartArray[cart].addEventListener("click", function (){ //addEventListener to add dans cart mongo-DB
